@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Support for iOS device sizes. -->
+		<meta name="viewport" content='user-scalable=no'>
+
+		<title>Piles of Evidence</title>
+		<link rel="stylesheet" href="base.css" type="text/css">
+		<link rel="shortcut icon" href="icon.png"/>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function(event) {
+				replace_pile();
+				centre();
+			});
+
+			window.onresize = function() {
+				centre();
+			};
+
+			function replace_pile() {
+				// iOS devices do not support scaling emoji, so we may need to use an image instead.
+				if (navigator.userAgent.toLowerCase().indexOf("iphone") != -1) {
+					document.getElementById("pile").innerHTML = '<img src="icon.png" />';
+				}
+			}
+
+			function centre() {
+				content = document.getElementById('content');
+				content.style.marginTop = ((window.innerHeight - content.offsetHeight) / 2) + 'px';
+			}
+		</script>
+	</head>
+	<body>
+		<div id="content">
+			<p class="top">Despite what creationists, anti-vaxxers, and other purveryors of the <a href="http://rationalwiki.org/wiki/Gish_Gallop">Gish Gallop</a> might have you believe, scientific evidence isn&#8217;t best presented in heaps and piles.</p>
+
+			<div id="pile">
+				&#x1f4a9;
+			</div>
+
+			<p class="bottom">When your evidence is presented in piles, just like bullshit, it might just be a pile of bullshit.</p>
+
+			<p><a href="http://lueepodcast.wordpress.com">Life, the Universe & Everything Else</a></p>
+		</div>
+	</body>
+</html>

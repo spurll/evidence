@@ -1,0 +1,42 @@
+html {
+	margin: 0 auto;
+	height: 100%;
+}
+
+body {
+	background-image: linear-gradient(to bottom, #806641, #806641 50%, #ae956e 50%, #ae956e);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #ae956e;
+	text-align: center;
+	margin: 0 auto;
+	font-family: serif;
+	font-size: 150%;
+}
+
+p {
+	margin: 10px;
+}
+
+.top {
+	color: #ae956e;
+}
+
+.bottom {
+	color: #806641;
+}
+
+#pile {
+	margin: 30px;
+	font-size: 500%;
+}
+
+#content {
+	width: 600px;
+	margin: auto;
+}
+
+a:link { text-decoration: none; color: #ffffff; }
+a:visited { text-decoration: none; color: #ffffff; }
+a:active { text-decoration: none; color: #ffffff; }
+
