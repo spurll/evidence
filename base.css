@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	background-image: linear-gradient(to bottom, #806641, #806641 50%, #ae956e 50%, #ae956e);
+	background-image: linear-gradient(to bottom, #705631, #705631 50%, #ae956e 50%, #ae956e);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #ae956e;
@@ -23,7 +23,7 @@ p {
 }
 
 .bottom {
-	color: #806641;
+	color: #705631;
 }
 
 #pile {
